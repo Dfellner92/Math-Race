@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="head">MATH RACE</h1>
+    <div class="container main">
+      <!-- Progress Bar-->
+      <div class="progressBar">
+        <div class="barStatus"></div>
+      </div>
+      <!-- Question -->
+      <div class="question">17 - 14</div>
+      <!-- Answer -->
+      <div class="answer">4</div>
+      <!-- Right or Wrong -->
+      <div class="click-selection">
+        <button id="wrong" type="button" class="btn btn-danger btn-block">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <button id="right" type="button" class="btn btn-success btn-block">
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+      </div>
+      <br />
+      <!-- Current Score -->
+      <div class="btn btn-primary btn-block">
+        Score:
+        <div id="current-score"></div>
+      </div>
+    </div>
+
+    <div class="container ended game-over">
+      <div>GAME OVER</div>
+      <div>
+        You Scored:
+        <div id="current-score-end"></div>
+      </div>
+      <button
+        id="play-again"
+        type="button"
+        class="btn btn-primary btn-lg btn-block"
+      >
+        Play Again?
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
